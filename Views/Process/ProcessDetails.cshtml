@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Process Details";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Process Name: @ViewBag.Proc.ProcessName</p>
+<p>Process ID: @ViewBag.Proc.Id</p>
+<p>Start Time: @ViewBag.Proc.StartTime</p>
+<p>Total Processor Time: @ViewBag.Proc.TotalProcessorTime</p>
+<p>Threads: @ViewBag.Proc.Threads.Count</p>
+<p>Modules: @ViewBag.Proc.Modules.Count</p>
+<p>Handle Count: @ViewBag.Proc.HandleCount</p>
+<p>Priority Class: @ViewBag.Proc.PriorityClass</p>

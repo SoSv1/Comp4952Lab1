@@ -1,0 +1,15 @@
+@model Process
+
+@{
+    ViewData["Title"] = "Process Details";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Process Name: @Model.ProcessName</p>
+<p>Process ID: @Model.Id</p>
+<p>Start Time: @Model.StartTime</p>
+<p>Total Processor Time: @Model.TotalProcessorTime</p>
+<p>Threads: @Model.Threads.Count</p>
+<p>Modules: @Model.Modules.Count</p>
+<p>Handle Count: @Model.HandleCount</p>
+<p>Priority Class: @Model.PriorityClass</p>

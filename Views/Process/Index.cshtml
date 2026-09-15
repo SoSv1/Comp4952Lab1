@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Process Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>This is the @ViewData["Title"]</p>
+
+<ul>
+@foreach (var item in ViewBag.Procs)
+{  
+    <li>
+            <a class="nav-link text-white"
+                asp-controller="Process" asp-action="ProcessDetails"
+               asp-route-id="@item.Id">@item.ProcessName (ID: @item.Id)</a>
+    </li>
+}
+</ul>
